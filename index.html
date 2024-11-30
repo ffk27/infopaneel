@@ -2,8 +2,36 @@
 <html>
     <head>
         <meta charset="utf8"/>
+        <style>
+            #grid-container {
+                display: grid;
+                grid-template-columns: auto auto auto;
+            }
+        </style>
     </head>
     <body>
-        <h1>test</h1>
+        <section id="grid-container">
+            <div class="grid-item grid-item-buienradar-1">
+                <IFRAME SRC="https://image.buienradar.nl/2.0/image/single/RadarMapRainNL?height=550&width=512&renderBackground=True&renderBranding=False&renderText=True" NORESIZE SCROLLING=NO HSPACE=0 VSPACE=0 FRAMEBORDER=0 MARGINHEIGHT=0 MARGINWIDTH=0 WIDTH=550 HEIGHT=512></IFRAME>            
+            </div>
+            <div class="grid-item">
+                <iframe src="https://gadgets.buienradar.nl/gadget/zoommap/?lat=52.4769&lng=6.11384&overname=2&zoom=8&naam=8014BK&size=3&voor=0" scrolling=no width=550 height=512 frameborder=no></iframe>
+            </div>
+            <div class="grid-item">
+                <iframe sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox" src="https://widgets.meteox.com/nl-NL/widgets/radar/country/nl/satellite?z=7" style="width:100%!important;max-width:600px!important;max-height:600px!important;height:100%!important;padding:0px;border:none!important;box-sizing:border-box!important;" scrolling="no" frameborder="0"></iframe>
+            </div>
+            <div class="grid-item">
+                <iframe width='300' height='365' name='FC3' style='border:1px solid;border-color:transparent;' src='https://api.wetteronline.de/wetterwidget?gid=02044&modeid=FC3&seourl=kiruna&locationname=Kiruna&lang=de'></iframe>
+            </div>
+            <div class="grid-item">
+                <iframe width='300' height='365' name='FC3' style='border:1px solid;border-color:transparent;' src='https://api.wetteronline.de/wetterwidget?gid=27612&modeid=FC3&seourl=moskau&locationname=Moskau&lang=de'></iframe>
+            </div>
+            <div class="grid-item">
+                <iframe width='300' height='365' name='FC3' style='border:1px solid;border-color:transparent;' src='https://api.wetteronline.de/wetterwidget?gid=11308&modeid=FC3&seourl=lech-am-arlberg&locationname=Lech am Arlberg&lang=de'></iframe>
+            </div>
+            <div class="grid-item">
+                <iframe width='300' height='365' name='FC3' style='border:1px solid;border-color:transparent;' src='https://api.wetteronline.de/wetterwidget?gid=71123&modeid=FC3&seourl=edmonton&locationname=Edmonton&lang=de'></iframe>
+            </div>
+        </section>
     </body>
 </html>
